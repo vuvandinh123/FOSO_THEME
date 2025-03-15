@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+:root {
+  --background: #ffffff;
+  --foreground: #25272a;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  color: #4bab7a;
+}
+a {
+  color: var(--foreground);
+}
+.text-gradient {
+  background: linear-gradient(0deg, #0c543c 0%, #5cecbe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-primary {
+  color: #4baa7a;
+}
+.bg-primary {
+  background-color: #4baa7a;
+}
+.text-secondary {
+  color: #33404a;
+}
+.font-raleway {
+  font-family: var(--font-raleway);
+}
